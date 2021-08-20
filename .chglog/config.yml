@@ -2,7 +2,7 @@ style: gitlab
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
-  repository_url: local
+  repository_url: https://github.com/Bartman0/git-chglog-test
 options:
   commits:
     # filters:
@@ -12,14 +12,19 @@ options:
     #     - perf
     #     - refactor
   commit_groups:
-    # title_maps:
-    #   feat: Features
-    #   fix: Bug Fixes
-    #   perf: Performance Improvements
-    #   refactor: Code Refactoring
+    title_maps:
+      feat: Features
+      feature: Features
+      fix: Bug Fixes
+      perf: Performance Improvements
+      refactor: Code Refactoring
+      doc: Documentation
   header:
-    pattern: "^(\\w*)\\:\\s(.*)|Merge branch '(feature)/(.*)'.*$"
+    #pattern: "^(\\w*)\\:\\s(.*)$"
+    pattern: "^(\\w*)\\:\\s(.*)i|Merge branch '(\\w*)/(.*)'.*$"
     pattern_maps:
+      - Type
+      - Subject
       - Type
       - Subject
   notes:
