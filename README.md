@@ -1,6 +1,9 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+### Documentation
+-  generated CHANGELOG into README
+
 
 <a name="1.9"></a>
 ## [1.9] - 2021-08-20
