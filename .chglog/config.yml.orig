@@ -1,4 +1,4 @@
-style: github
+style: gitlab
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
@@ -19,11 +19,12 @@ options:
       perf: Performance Improvements
       refactor: Code Refactoring
       doc: Documentation
-      release: Releases
   header:
-    pattern: "'*(\\w*)[\\/|\\:]([\\w\\s]*)'?.*$"
     #pattern: "^(\\w*)\\:\\s(.*)$"
+    pattern: "^(\\w*)\\:\\s(.*)i|Merge branch '(\\w*)/(.*)'.*$"
     pattern_maps:
+      - Type
+      - Subject
       - Type
       - Subject
   notes:
