@@ -1,26 +1,24 @@
-style: github
+style: gitlab
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
   repository_url: local
 options:
   commits:
-    filters:
-      Type:
-        - feat
-        - fix
-        - perf
-        - refactor
-        - doc
+    # filters:
+    #   Type:
+    #     - feat
+    #     - fix
+    #     - perf
+    #     - refactor
   commit_groups:
-    title_maps:
-      feat: Features
-      fix: Bug Fixes
-      perf: Performance Improvements
-      refactor: Code Refactoring
-      doc: Documentation
+    # title_maps:
+    #   feat: Features
+    #   fix: Bug Fixes
+    #   perf: Performance Improvements
+    #   refactor: Code Refactoring
   header:
-    pattern: "^(\\w*)\\:\\s(.*)$"
+    pattern: "^(\\w*)\\:\\s(.*)|Merge branch '(feature)/(.*)'.*$"
     pattern_maps:
       - Type
       - Subject
