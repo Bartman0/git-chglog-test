@@ -1,8 +1,15 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+
+<a name="2.0"></a>
+## [2.0] - 2021-08-20
 ### Documentation
+-  added some text
 -  generated CHANGELOG into README
+
+### Features
+- US12345
 
 
 <a name="1.9"></a>
@@ -58,7 +65,8 @@
 <a name="1.0"></a>
 ## 1.0 - 2021-08-20
 
-[Unreleased]: https://github.com/Bartman0/git-chglog-test/compare/1.9...HEAD
+[Unreleased]: https://github.com/Bartman0/git-chglog-test/compare/2.0...HEAD
+[2.0]: https://github.com/Bartman0/git-chglog-test/compare/1.9...2.0
 [1.9]: https://github.com/Bartman0/git-chglog-test/compare/1.8...1.9
 [1.8]: https://github.com/Bartman0/git-chglog-test/compare/1.7...1.8
 [1.7]: https://github.com/Bartman0/git-chglog-test/compare/1.6...1.7
